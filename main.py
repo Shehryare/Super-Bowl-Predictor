@@ -25,4 +25,22 @@ print(os.path.getsize('data/datasets_superbowl.csv'))
 print('\nSuper Bowl Ads:')
 print(os.path.getsize('data/datasets_superbowl-ads.csv'))
 
+#prints the amount of rows that are in each dataset
+from utils import line_count
+print("---Number of rows from each dataset---\n")
+print("Super Bowl History:")
+line_num = line_count('data/datasets_superbowl.csv')
+print(line_num)
+print("\nSuper Bowl Ads:")
+line_num = line_count('data/datasets_superbowl-ads.csv')
+print(line_num)
+
+
+
+
+
+
+
+
+
 
