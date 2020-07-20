@@ -80,7 +80,21 @@ print(head('data/datasets_superbowl-ads.csv', 2))
 
 #-----------------------------------------------------#
 
-#reads the datasets and turns them into variables
+###NEED TO PARSE DATA BC SOME HAVE 5 FIELDS INSTEAD OF THE DEFAULT FIELD 4
+
+#Read into textfile by readline method 
+#read line into text file
+#splitting by , into a list
+# check if the the line is greater than 4 
+#if it is then modify
+
+
+import pandas as pd 
+df = pd.read_csv('test-data/datasets_superbowl-ads.txt')
+
+
+
+
 import pandas as pd
 ads = pd.read_csv('data/datasets_superbowl-ads.csv')
 history = pd.read_csv('data/datasets_superbowl.csv')
